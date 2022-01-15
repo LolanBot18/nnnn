@@ -71,7 +71,6 @@ async def start(bot, update):
     
     await cmd.reply_photo(
             photo=f"{random.choice(PHOTO)}",
-        chat_id=update.chat.id,
         text=Translation.START_TEXT.format(
                 update.from_user.first_name),
         reply_markup=reply_markup,
